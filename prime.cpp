@@ -3,21 +3,25 @@ using namespace std;
 
 int main()
 {
-  int n, flag=1;
+  int n, fact=0;
   cin>> n;
-  for (int i = 2; i < n; i++)
+for (int i = 1; i <=n; i++)
+{
+  if (n%i==0)
   {
-    if (n%i==0)
-    {
-      cout<< "Not prime";
-      flag=0;
-      break;
-    }
+    fact++;
   }
-  if (flag==1)
-  {
-    cout<< "Prime";
-  }
+}
+if (fact==2)
+{
+  cout<< "Prime";
+}
+else
+{
+  cout<< "Not prime";
+}
+
+
 
   return 0;
 }
