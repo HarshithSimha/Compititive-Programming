@@ -11,13 +11,11 @@ for (int i = 2; i <n; i++)
   {
     cout<< "Not prime";
     flag--;
-    break;
+    return 0;
   }
 }
 if (flag==1)
-{
   cout<< "Prime";
-}
 
   return 0;
 }
