@@ -4,9 +4,13 @@ using namespace std;
 
 int main()
 {
-  // cout<< sqrt(9)<< sqrt(10);
   int n, flag=1;
   cin>> n;
+  if (n==1)
+  {
+    cout<< "Not prime";
+    return 0;
+  }
 for (int i = 2; i <=sqrt(n); i++)
 {
   if (n%i==0)
